@@ -65,7 +65,7 @@ func main() {
 
 		//fetching the booking page
 		log.Println("Fetching booking page")
-		req, err = http.NewRequest("POST", "http://www.bbdc.sg/bbdc/b-3c-pLessonBooking1.asp",
+		req, err = http.NewRequest("POST", "http://www.bbdc.sg/bbdc/b-selectTPDSModule.asp",
 			strings.NewReader(bookingForm().Encode()))
 		//req.AddCookie(aspxanon)
 		req.AddCookie(sessionID)
